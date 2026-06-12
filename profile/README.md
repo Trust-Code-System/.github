@@ -66,7 +66,7 @@ e-commerce, HR technology, AI, cloud infrastructure, Web3, and energy.
 
 - [Bashir Abdulah](https://github.com/Bash-Abdul) - Frontend and Product Engineering
 - [Abdulhaleem Sanuth](https://github.com/Abdulhaleem-6) - Cloud and Backend Engineering
-- Olamilekan Emmanuel Oyedele - Cybersecurity and SOC
+- [Olamilekan Emmanuel Oyedele](https://github.com/Interleks) - Cybersecurity and SOC
 - [Abass Ibrahim](https://github.com/Lingz450) - Full-Stack Delivery and Design
 
 ## Work with us
