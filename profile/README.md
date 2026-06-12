@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://trustcodesystems.com">
-    <img src="../assets/trustcode-systems-logo.png" alt="TrustCode Systems" width="520">
+    <img src="./assets/trustcode-systems-logo.png" alt="TrustCode Systems" width="520">
   </a>
 </p>
 
