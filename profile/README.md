@@ -1,22 +1,22 @@
 <p align="center">
-  <a href="https://trustcodesystems.com">
-    <img src="./assets/trustcode-systems-logo.png" alt="TrustCode Systems" width="520">
+  <a href="https://trustcodesystem.tech">
+    <img src="./assets/trustcode-system-logo.png" alt="TrustCode System" width="520">
   </a>
 </p>
 
 <h1 align="center">Software you can stake your business on.</h1>
 
 <p align="center">
-  TrustCode Systems is a four-engineer product and technology team in Lagos and
+  TrustCode System is a four-engineer product and technology team in Lagos and
   London. We design, build, secure, deploy, and support production software for
   teams worldwide.
 </p>
 
 <p align="center">
-  <a href="https://trustcodesystems.com">Website</a> ·
-  <a href="https://trustcodesystems.com/work">Live work</a> ·
-  <a href="https://trustcodesystems.com/services">Services</a> ·
-  <a href="https://trustcodesystems.com/contact">Start a project</a>
+  <a href="https://trustcodesystem.tech">Website</a> ·
+  <a href="https://trustcodesystem.tech/work">Live work</a> ·
+  <a href="https://trustcodesystem.tech/services">Services</a> ·
+  <a href="https://trustcodesystem.tech/contact">Start a project</a>
 </p>
 
 ## What we build
@@ -73,5 +73,5 @@ e-commerce, HR technology, AI, cloud infrastructure, Web3, and energy.
 
 We work through fixed-scope projects, ongoing retainers, and staff augmentation.
 
-**hello@trustcodesystems.com**  
+**hello@trustcodesystem.tech**  
 Lagos, Nigeria · London, United Kingdom · Remote worldwide
