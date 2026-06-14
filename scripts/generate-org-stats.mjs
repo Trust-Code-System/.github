@@ -76,6 +76,27 @@ async function getLanguages(repositories) {
     .slice(0, 5);
 }
 
+async function getOpenIssueCount(repositories) {
+  const counts = await Promise.all(
+    repositories.map(async (repository) => {
+      let count = 0;
+
+      for (let page = 1; ; page += 1) {
+        const issues = await github(
+          `/repos/${organization}/${repository.name}/issues?state=open&per_page=100&page=${page}`,
+        );
+        count += issues.filter((issue) => !issue.pull_request).length;
+
+        if (issues.length < 100) {
+          return count;
+        }
+      }
+    }),
+  );
+
+  return counts.reduce((sum, count) => sum + count, 0);
+}
+
 function escapeXml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -128,16 +149,16 @@ function renderLanguages(languages) {
     </g>`;
 }
 
-const [org, repositories, openIssueSearch] = await Promise.all([
+const [org, repositories] = await Promise.all([
   github(`/orgs/${organization}`),
   getRepositories(),
-  github(
-    `/search/issues?q=${encodeURIComponent(`org:${organization} is:issue is:open`)}&per_page=1`,
-  ),
 ]);
 
 const activeRepositories = repositories.filter((repository) => !repository.archived);
-const languages = await getLanguages(activeRepositories);
+const [languages, openIssues] = await Promise.all([
+  getLanguages(activeRepositories),
+  getOpenIssueCount(activeRepositories),
+]);
 const stars = activeRepositories.reduce(
   (sum, repository) => sum + repository.stargazers_count,
   0,
@@ -146,7 +167,6 @@ const forks = activeRepositories.reduce(
   (sum, repository) => sum + repository.forks_count,
   0,
 );
-const openIssues = openIssueSearch.total_count;
 const recentlyUpdated = [...activeRepositories]
   .sort((left, right) => new Date(right.pushed_at) - new Date(left.pushed_at))
   .slice(0, 3)
