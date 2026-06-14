@@ -204,7 +204,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" vi
   ${metric(390, "Open issues", formatNumber(openIssues))}
   <line x1="42" y1="150" x2="858" y2="150" stroke="#d0d5dd" stroke-opacity=".65" />
   <g transform="translate(42 190)">
-    <text class="section-title" x="0" y="0">Recently updated</text>
+    <text class="section-title" x="0" y="0">Featured projects</text>
     ${featuredProjects
       .map(
         (project, index) =>

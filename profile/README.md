@@ -28,6 +28,12 @@
   <a href="mailto:hello@trustcodesystem.tech"><img alt="Email" src="https://img.shields.io/badge/Email_Us-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/Trust-Code-System/.github/blob/main/CAPABILITIES.md"><img alt="Capabilities" src="https://img.shields.io/badge/Explore_Capabilities-6941C6?style=flat-square"></a>
+  <a href="https://github.com/Trust-Code-System/.github/blob/main/PORTFOLIO.md"><img alt="Portfolio" src="https://img.shields.io/badge/View_Full_Portfolio-039855?style=flat-square"></a>
+  <a href="https://github.com/Trust-Code-System/.github/blob/main/TEAM.md"><img alt="Team" src="https://img.shields.io/badge/Meet_the_Team-DC6803?style=flat-square"></a>
+</p>
+
 ## TrustCode at a glance
 
 <p align="center">
@@ -37,6 +43,15 @@
 The snapshot above is generated from the GitHub API. A daily workflow prepares
 updates for review, reporting real public organization data rather than
 estimated activity.
+
+## Why teams choose TrustCode
+
+| Discipline | Evidence |
+| --- | --- |
+| **Product craft** | Fintech and education workflows that reduced manual work by about 25-30%, plus an automotive platform that reduced manual WhatsApp enquiries by at least 55% |
+| **Cloud scale** | A seven-service AWS CDK stack supporting 49 third-party integrations, plus serverless event pipelines and cost-aware AI scheduling |
+| **Security by default** | ISC2-certified security leadership, a 25+ query KQL playbook, Sentinel and Defender investigations, Splunk monitoring, and MITRE ATT&CK reporting |
+| **Delivery discipline** | 15+ live team products, a 500+ member product community, weekly staging delivery, and production IT operations experience |
 
 ## What we build
 
@@ -58,6 +73,8 @@ estimated activity.
 | **E-commerce** | Storefronts, carts, custom orders, wholesale flows, Paystack, Stripe, and operational dashboards |
 | **Managed IT and training** | Monitoring, maintenance, technical support, security awareness, and engineering mentorship |
 
+See the complete [capability guide](https://github.com/Trust-Code-System/.github/blob/main/CAPABILITIES.md).
+
 ## Production proof
 
 Our team has shipped **15+ live products** across fintech, education,
@@ -71,6 +88,9 @@ e-commerce, HR technology, AI, cloud infrastructure, Web3, and energy.
 | [AirtimeVault](https://airtime-vault-plhc.vercel.app) | Airtime-to-cash wallet with KYC and fraud monitoring | Next.js, Node.js, PostgreSQL, Paystack |
 | [PetroBrain](https://petro-brain-web.vercel.app) | Source-citing AI intelligence for oil and gas teams | Next.js, OpenAI, LangChain |
 | [StudyCoach](https://study-coach-five.vercel.app) | AI summaries and quizzes that reduce study time | Next.js, OpenAI, LangChain |
+
+See all documented products and engineering showcases in the
+[TrustCode portfolio](https://github.com/Trust-Code-System/.github/blob/main/PORTFOLIO.md).
 
 ## Technologies we use
 
@@ -149,14 +169,60 @@ e-commerce, HR technology, AI, cloud infrastructure, Web3, and energy.
 4. **Harden** security, performance, accessibility, and error handling.
 5. **Support** the production system with monitoring and ongoing maintenance.
 
+## Engineering standards
+
+- **Proof over claims:** public links, measurable outcomes, and inspectable code
+  where client confidentiality permits.
+- **Security before release:** access control, input validation, secret
+  management, dependency hygiene, and security review are part of delivery.
+- **AI with evidence:** source citations, deterministic tools, evaluation
+  harnesses, and human escalation for high-risk decisions.
+- **Visible progress:** written scope, staging links, weekly demonstrations, and
+  documented decisions.
+- **Operational ownership:** monitoring, maintenance, incident handling, and
+  support after launch.
+
 ## Team
 
-| Engineer | Focus |
-| --- | --- |
-| [Bashir Abdulah](https://github.com/Bash-Abdul) | Frontend and Product Engineering |
-| [Abdulhaleem Sanuth](https://github.com/Abdulhaleem-6) | Cloud and Backend Engineering |
-| [Olamilekan Emmanuel Oyedele](https://github.com/Interleks) | Cybersecurity and SOC |
-| [Abass Ibrahim](https://github.com/Lingz450) | Full-Stack Delivery and Design |
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <a href="https://github.com/Bash-Abdul">
+        <img src="https://github.com/Bash-Abdul.png?size=110" width="90" alt="Bashir Abdulah"><br>
+        <strong>Bashir Abdulah</strong>
+      </a><br>
+      Product and Frontend<br>
+      <sub>BSc IT and Business Information Systems</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="https://github.com/Abdulhaleem-6">
+        <img src="https://github.com/Abdulhaleem-6.png?size=110" width="90" alt="Abdulhaleem Sanuth"><br>
+        <strong>Abdulhaleem Sanuth</strong>
+      </a><br>
+      Cloud and Backend<br>
+      <sub>AWS-native systems and AI pipelines</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="https://github.com/Interleks">
+        <img src="https://github.com/Interleks.png?size=110" width="90" alt="Olamilekan Emmanuel Oyedele"><br>
+        <strong>Olamilekan Oyedele</strong>
+      </a><br>
+      Cybersecurity and SOC<br>
+      <sub>ISC2 Certified in Cybersecurity</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="https://github.com/Lingz450">
+        <img src="https://github.com/Lingz450.png?size=110" width="90" alt="Abass Ibrahim"><br>
+        <strong>Abass Ibrahim</strong>
+      </a><br>
+      Full-Stack Delivery and Design<br>
+      <sub>Seven live production products</sub>
+    </td>
+  </tr>
+</table>
+
+Read the team’s credentials, shipped proof, and core technologies in
+[TEAM.md](https://github.com/Trust-Code-System/.github/blob/main/TEAM.md).
 
 ## Work with us
 

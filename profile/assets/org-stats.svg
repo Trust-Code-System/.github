@@ -39,7 +39,7 @@
     </g>
   <line x1="42" y1="150" x2="858" y2="150" stroke="#d0d5dd" stroke-opacity=".65" />
   <g transform="translate(42 190)">
-    <text class="section-title" x="0" y="0">Recently updated</text>
+    <text class="section-title" x="0" y="0">Featured projects</text>
     <text class="repo" x="0" y="30">1. PetroBrain Web</text><text class="repo" x="0" y="59">2. Atlas HR</text><text class="repo" x="0" y="88">3. The Thesis Desk</text>
   </g>
   <g transform="translate(470 190)">

@@ -1,8 +1,15 @@
 name: Feature request
-description: Suggest an improvement to the website or developer experience.
+description: Suggest an improvement to a TrustCode public project or developer workflow.
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
+  - type: input
+    id: repository
+    attributes:
+      label: Repository or product
+      description: Which TrustCode repository or product should change?
+    validations:
+      required: true
   - type: textarea
     id: problem
     attributes:
@@ -24,4 +31,5 @@ body:
   - type: textarea
     id: context
     attributes:
-      label: Additional context
+      label: Success measure and additional context
+      description: How will we know this change delivered value?

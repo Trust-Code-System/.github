@@ -1,40 +1,42 @@
-# Contributing
+# Contributing to TrustCode repositories
 
-Thank you for contributing to the TrustCode System website.
+Thank you for helping improve a TrustCode System project.
+
+## Before you start
+
+1. Read the target repository's README, local contribution guide, and
+   architecture notes.
+2. Search existing issues and pull requests before opening a duplicate.
+3. Use an issue for material changes unless a maintainer has already approved
+   the work.
+4. Never commit secrets, production data, private client information, personal
+   contact details, or unpublished vulnerability information.
 
 ## Development
 
-Requirements:
-
-- Node.js 20 or later
-- pnpm 9
-
-```bash
-pnpm install
-pnpm dev
-```
+TrustCode repositories use different stacks, including TypeScript, Python,
+Next.js, FastAPI, AWS CDK, and security tooling. Follow the commands documented
+in the target repository rather than assuming one package manager or test
+runner.
 
 Before opening a pull request:
 
-```bash
-pnpm typecheck
-pnpm build
-```
-
-## Content
-
-Typed website content lives in `src/content`. Keep claims factual, measurable,
-and supported by published company information or approved client material.
-Never commit credentials, private client data, unpublished contracts, or
-personal information.
+- run the repository's formatter, linter, type checker, tests, and build;
+- verify changed user flows at relevant desktop and mobile sizes;
+- check accessibility and both supported color themes for visual work;
+- update documentation and environment examples when behavior changes;
+- confirm no generated files, logs, credentials, or local environment files
+  were added accidentally.
 
 ## Pull requests
 
-- Keep changes focused and explain the user or business outcome.
-- Include screenshots for visual changes.
-- Check responsive layouts and both color themes.
-- Preserve accessibility, metadata, and structured-data behavior.
+- Keep each pull request focused on one outcome.
+- Explain the user, operational, or security problem being solved.
+- Include screenshots or recordings for visual changes.
+- Describe migrations, deployment steps, configuration changes, and rollback
+  considerations.
 - Link the relevant issue when one exists.
+- Respond to review feedback with code or a clear technical explanation.
 
-By contributing, you agree that your contribution may be used as part of this
-repository under its applicable terms.
+By contributing, you agree that your contribution may be used under the target
+repository's applicable license and terms.

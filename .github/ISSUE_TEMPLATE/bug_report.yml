@@ -1,11 +1,19 @@
 name: Bug report
-description: Report a reproducible problem with the website.
+description: Report a reproducible problem in a TrustCode public repository.
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      value: Thanks for helping us improve TrustCode Systems.
+      value: Thanks for helping us improve TrustCode System. Do not include secrets, private client data, or vulnerability details.
+  - type: input
+    id: repository
+    attributes:
+      label: Repository or product
+      description: Which TrustCode repository, product, or deployment is affected?
+      placeholder: Atlas-HR, PetroBrainWeb, trustcode-system-website...
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
@@ -24,26 +32,28 @@ body:
     validations:
       required: true
   - type: input
-    id: url
+    id: location
     attributes:
-      label: Page URL
-      placeholder: https://trustcodesystems.com/...
+      label: Affected URL, endpoint, or component
+      placeholder: https://trustcodesystem.tech/... or src/path/to/component
   - type: dropdown
-    id: device
+    id: surface
     attributes:
-      label: Device type
+      label: Affected surface
       options:
-        - Desktop
-        - Mobile
-        - Tablet
+        - Web or browser interface
+        - Mobile interface
+        - API or backend service
+        - Cloud or deployment infrastructure
+        - Security tooling or detection
         - Other
     validations:
       required: true
   - type: input
-    id: browser
+    id: environment
     attributes:
-      label: Browser
-      placeholder: Chrome 126, Safari 17, Firefox 127
+      label: Environment
+      placeholder: Chrome 136, Node.js 22, Python 3.12, commit SHA...
   - type: textarea
     id: evidence
     attributes:

@@ -1,0 +1,112 @@
+{
+  "organization": "Trust-Code-System",
+  "repositories": {
+    ".github": {
+      "description": "TrustCode System organization profile, public engineering portfolio, and shared community health standards.",
+      "homepage": "https://trustcodesystem.tech",
+      "topics": [
+        "community-health",
+        "github-actions",
+        "organization-profile",
+        "trustcode"
+      ]
+    },
+    "Abass": {
+      "description": "Portfolio and production project showcase for TrustCode co-founder Abass Ibrahim.",
+      "homepage": "https://abass-rho.vercel.app",
+      "topics": [
+        "nextjs",
+        "portfolio",
+        "trustcode",
+        "typescript"
+      ]
+    },
+    "Atlas-HR": {
+      "description": "Global HR, payroll, onboarding, and AI compliance modelling across Nigeria, India, the UK, and the US.",
+      "homepage": "https://atlas-hr-fq24.vercel.app",
+      "topics": [
+        "ai",
+        "compliance",
+        "hr-tech",
+        "nextjs",
+        "openai",
+        "payroll",
+        "postgresql",
+        "typescript"
+      ]
+    },
+    "Ghost-Trading-Academy": {
+      "description": "The Thesis Desk: real-time crypto trading command center, journal, analytics, and education for a 500+ member community.",
+      "homepage": "https://thethesisdesk.xyz",
+      "topics": [
+        "crypto",
+        "nextjs",
+        "postgresql",
+        "prisma",
+        "trading-dashboard",
+        "typescript",
+        "websockets"
+      ]
+    },
+    "MaxxEngageAI": {
+      "description": "AI-verified competence and engagement platform for global digital talent.",
+      "homepage": "https://maxx-engage-ai.vercel.app",
+      "topics": [
+        "ai",
+        "education",
+        "nextjs",
+        "skills-verification",
+        "typescript"
+      ]
+    },
+    "PetroBrain": {
+      "description": "Safety-first oil and gas AI backend with cited RAG, deterministic engineering calculations, and NUPRC Tier-3 MRV.",
+      "homepage": "https://petro-brain-web.vercel.app",
+      "topics": [
+        "ai",
+        "emissions",
+        "engineering",
+        "fastapi",
+        "oil-and-gas",
+        "pgvector",
+        "python",
+        "rag"
+      ]
+    },
+    "PetroBrainWeb": {
+      "description": "Web interface for PetroBrain, providing source-citing AI intelligence and engineering decision support for oil and gas teams.",
+      "homepage": "https://petro-brain-web.vercel.app",
+      "topics": [
+        "ai",
+        "langchain",
+        "nextjs",
+        "oil-and-gas",
+        "openai",
+        "typescript"
+      ]
+    },
+    "TrustCode-System": {
+      "description": "TrustCode System website codebase for product engineering, cloud, AI, cybersecurity, and managed technology services.",
+      "homepage": "https://trustcodesystem.tech",
+      "topics": [
+        "company-website",
+        "nextjs",
+        "tailwindcss",
+        "trustcode",
+        "typescript"
+      ]
+    },
+    "trustcode-system-website": {
+      "description": "Official TrustCode System website for product engineering, cloud, AI, cybersecurity, e-commerce, and managed technology services.",
+      "homepage": "https://trustcodesystem.tech",
+      "topics": [
+        "company-website",
+        "nextjs",
+        "tailwindcss",
+        "trustcode",
+        "typescript",
+        "vercel"
+      ]
+    }
+  }
+}

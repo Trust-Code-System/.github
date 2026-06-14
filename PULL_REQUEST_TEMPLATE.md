@@ -1,18 +1,28 @@
 ## Summary
 
-Describe what changed and why.
+Describe what changed, why it changed, and the user or operational outcome.
+
+## Scope
+
+- Affected repositories, services, pages, or components:
+- Related issue:
+- Out of scope:
 
 ## Verification
 
-- [ ] `pnpm typecheck`
-- [ ] `pnpm build`
-- [ ] Relevant pages were checked at desktop and mobile widths
-- [ ] No secrets or private client data are included
+- [ ] Repository-specific lint, type-check, test, and build commands pass
+- [ ] Changed behavior was tested locally or in an appropriate preview
+- [ ] Visual changes were checked at relevant desktop and mobile widths
+- [ ] Accessibility and supported color themes were checked where applicable
+- [ ] Documentation and environment examples were updated
+- [ ] No secrets, credentials, private client data, or personal information are included
 
-## Visual changes
+## Evidence
 
-Add before/after screenshots when the user interface changes.
+Add screenshots, recordings, test output, or logs that help reviewers verify
+the change. Remove or redact sensitive information.
 
-## Risk
+## Risk and rollout
 
-Describe deployment, security, accessibility, or compatibility risks.
+Describe migrations, configuration changes, security implications, deployment
+steps, compatibility risks, monitoring, and rollback considerations.
