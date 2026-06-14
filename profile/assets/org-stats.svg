@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-labelledby="title description">
   <title id="title">TrustCode System GitHub organization statistics</title>
-  <desc id="description">9 public repositories, 2 stars, 0 forks, and 2 open issues.</desc>
+  <desc id="description">9 public repositories, 2 stars, 0 forks, and 0 open issues.</desc>
   <style>
     .panel { fill: #ffffff; stroke: #d0d5dd; }
     .title { fill: #101828; font: 700 24px "Segoe UI", Arial, sans-serif; }
@@ -34,7 +34,7 @@
       <text class="metric-label" x="0" y="132">Forks</text>
     </g>
   <g transform="translate(390 0)">
-      <text class="metric-value" x="0" y="108">2</text>
+      <text class="metric-value" x="0" y="108">0</text>
       <text class="metric-label" x="0" y="132">Open issues</text>
     </g>
   <line x1="42" y1="158" x2="858" y2="158" stroke="#d0d5dd" stroke-opacity=".65" />
