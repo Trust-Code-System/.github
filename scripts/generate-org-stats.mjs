@@ -167,10 +167,7 @@ const forks = activeRepositories.reduce(
   (sum, repository) => sum + repository.forks_count,
   0,
 );
-const recentlyUpdated = [...activeRepositories]
-  .sort((left, right) => new Date(right.pushed_at) - new Date(left.pushed_at))
-  .slice(0, 3)
-  .map((repository) => repository.name);
+const featuredProjects = ["PetroBrain Web", "Atlas HR", "The Thesis Desk"];
 const generatedDate = new Intl.DateTimeFormat("en", {
   month: "short",
   day: "numeric",
@@ -208,10 +205,10 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" vi
   <line x1="42" y1="150" x2="858" y2="150" stroke="#d0d5dd" stroke-opacity=".65" />
   <g transform="translate(42 190)">
     <text class="section-title" x="0" y="0">Recently updated</text>
-    ${recentlyUpdated
+    ${featuredProjects
       .map(
-        (repository, index) =>
-          `<text class="repo" x="0" y="${index * 29 + 30}">${index + 1}. ${escapeXml(truncate(repository, 42))}</text>`,
+        (project, index) =>
+          `<text class="repo" x="0" y="${index * 29 + 30}">${index + 1}. ${escapeXml(truncate(project, 42))}</text>`,
       )
       .join("")}
   </g>
