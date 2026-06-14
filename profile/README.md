@@ -34,8 +34,9 @@
   <img src="./assets/org-stats.svg" alt="Live TrustCode System GitHub statistics" width="100%">
 </p>
 
-The snapshot above is generated from the GitHub API and refreshed automatically.
-It reports real public organization data rather than estimated activity.
+The snapshot above is generated from the GitHub API. A daily workflow proposes
+updates through a pull request, reporting real public organization data rather
+than estimated activity.
 
 ## What we build
 

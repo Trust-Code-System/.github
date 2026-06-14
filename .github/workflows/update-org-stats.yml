@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: organization-profile-stats
@@ -24,7 +25,7 @@ jobs:
 
     steps:
       - name: Check out profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Generate organization statistics
         env:
@@ -32,15 +33,30 @@ jobs:
           GITHUB_ORG: Trust-Code-System
         run: node scripts/generate-org-stats.mjs
 
-      - name: Commit refreshed statistics
+      - name: Open or update statistics pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if git diff --quiet -- profile/assets/org-stats.svg; then
             echo "Organization statistics are already current."
             exit 0
           fi
 
+          branch="automation/update-org-stats"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
           git add profile/assets/org-stats.svg
           git commit -m "Update organization profile statistics"
-          git push
+          git push --force origin "HEAD:$branch"
+
+          if gh pr list --head "$branch" --state open --json number --jq 'length > 0' | grep -q true; then
+            echo "Updated the existing organization statistics pull request."
+            exit 0
+          fi
+
+          gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "Update organization profile statistics" \
+            --body "Automated daily refresh of the public TrustCode System GitHub statistics."
