@@ -5,5 +5,6 @@ This repository is intended to be published as
 organization overview page.
 
 The profile includes an automatically generated organization snapshot. The
-`update-org-stats.yml` workflow checks GitHub's public API daily and opens or
-updates a pull request when `profile/assets/org-stats.svg` changes.
+`update-org-stats.yml` workflow checks GitHub's public API daily and prepares an
+update branch when `profile/assets/org-stats.svg` changes. It opens or updates a
+pull request when repository settings permit GitHub Actions to do so.
