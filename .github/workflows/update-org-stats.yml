@@ -1,0 +1,46 @@
+name: Update organization statistics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/generate-org-stats.mjs"
+      - ".github/workflows/update-org-stats.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: organization-profile-stats
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate organization statistics
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ORG: Trust-Code-System
+        run: node scripts/generate-org-stats.mjs
+
+      - name: Commit refreshed statistics
+        run: |
+          if git diff --quiet -- profile/assets/org-stats.svg; then
+            echo "Organization statistics are already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/assets/org-stats.svg
+          git commit -m "Update organization profile statistics"
+          git push
