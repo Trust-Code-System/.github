@@ -55,8 +55,13 @@ jobs:
             exit 0
           fi
 
-          gh pr create \
+          if gh pr create \
             --base main \
             --head "$branch" \
             --title "Update organization profile statistics" \
-            --body "Automated daily refresh of the public TrustCode System GitHub statistics."
+            --body "Automated daily refresh of the public TrustCode System GitHub statistics."; then
+            exit 0
+          fi
+
+          echo "::warning::The statistics branch was updated, but repository settings prevented GitHub Actions from creating a pull request."
+          echo "::warning::Open https://github.com/Trust-Code-System/.github/compare/main...automation/update-org-stats to create it manually."
