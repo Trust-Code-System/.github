@@ -128,9 +128,12 @@ function renderLanguages(languages) {
     </g>`;
 }
 
-const [org, repositories] = await Promise.all([
+const [org, repositories, openIssueSearch] = await Promise.all([
   github(`/orgs/${organization}`),
   getRepositories(),
+  github(
+    `/search/issues?q=${encodeURIComponent(`org:${organization} is:issue is:open`)}&per_page=1`,
+  ),
 ]);
 
 const activeRepositories = repositories.filter((repository) => !repository.archived);
@@ -143,10 +146,7 @@ const forks = activeRepositories.reduce(
   (sum, repository) => sum + repository.forks_count,
   0,
 );
-const openIssues = activeRepositories.reduce(
-  (sum, repository) => sum + repository.open_issues_count,
-  0,
-);
+const openIssues = openIssueSearch.total_count;
 const recentlyUpdated = [...activeRepositories]
   .sort((left, right) => new Date(right.pushed_at) - new Date(left.pushed_at))
   .slice(0, 3)
@@ -160,7 +160,7 @@ const generatedDate = new Intl.DateTimeFormat("en", {
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-labelledby="title description">
   <title id="title">TrustCode System GitHub organization statistics</title>
-  <desc id="description">${activeRepositories.length} public repositories, ${stars} stars, ${forks} forks, and ${openIssues} open issues or pull requests.</desc>
+  <desc id="description">${activeRepositories.length} public repositories, ${stars} stars, ${forks} forks, and ${openIssues} open issues.</desc>
   <style>
     .panel { fill: #ffffff; stroke: #d0d5dd; }
     .title { fill: #101828; font: 700 24px "Segoe UI", Arial, sans-serif; }
@@ -184,7 +184,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" vi
   ${metric(42, "Public repositories", formatNumber(activeRepositories.length), true)}
   ${metric(170, "Stars earned", formatNumber(stars))}
   ${metric(290, "Forks", formatNumber(forks))}
-  ${metric(390, "Open issues + PRs", formatNumber(openIssues))}
+  ${metric(390, "Open issues", formatNumber(openIssues))}
   <line x1="42" y1="158" x2="858" y2="158" stroke="#d0d5dd" stroke-opacity=".65" />
   <g transform="translate(42 190)">
     <text class="section-title" x="0" y="-22">Recently updated</text>
