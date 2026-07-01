@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-labelledby="title description">
   <title id="title">TrustCode System GitHub organization statistics</title>
-  <desc id="description">9 public repositories, 2 stars, 0 forks, and 2 open issues.</desc>
+  <desc id="description">14 public repositories, 3 stars, 0 forks, and 4 open issues.</desc>
   <style>
     .panel { fill: #ffffff; stroke: #d0d5dd; }
     .title { fill: #101828; font: 700 24px "Segoe UI", Arial, sans-serif; }
@@ -20,13 +20,13 @@
   <rect class="panel" x="1" y="1" width="898" height="328" rx="14" />
   <text class="title" x="42" y="48">TrustCode System Limited</text>
   <text class="subtitle" x="42" y="72">Live public organization snapshot</text>
-  <text class="updated" x="858" y="48" text-anchor="end">Updated Jun 14, 2026</text>
+  <text class="updated" x="858" y="48" text-anchor="end">Updated Jul 1, 2026</text>
   <g transform="translate(42 0)">
-      <text class="metric-value accent" x="0" y="108">9</text>
+      <text class="metric-value accent" x="0" y="108">14</text>
       <text class="metric-label" x="0" y="132">Public repositories</text>
     </g>
   <g transform="translate(170 0)">
-      <text class="metric-value" x="0" y="108">2</text>
+      <text class="metric-value" x="0" y="108">3</text>
       <text class="metric-label" x="0" y="132">Stars earned</text>
     </g>
   <g transform="translate(290 0)">
@@ -34,7 +34,7 @@
       <text class="metric-label" x="0" y="132">Forks</text>
     </g>
   <g transform="translate(390 0)">
-      <text class="metric-value" x="0" y="108">2</text>
+      <text class="metric-value" x="0" y="108">4</text>
       <text class="metric-label" x="0" y="132">Open issues</text>
     </g>
   <line x1="42" y1="150" x2="858" y2="150" stroke="#d0d5dd" stroke-opacity=".65" />
@@ -45,22 +45,22 @@
   <g transform="translate(470 190)">
       <text class="section-title" x="0" y="0">Top languages</text>
       <clipPath id="language-bar"><rect x="0" y="0" width="380" height="12" rx="6" /></clipPath>
-      <g transform="translate(0 22)" clip-path="url(#language-bar)"><rect x="0.0" y="0" width="275.6" height="12" fill="#155eef" /><rect x="275.6" y="0" width="63.2" height="12" fill="#7f56d9" /><rect x="338.8" y="0" width="34.5" height="12" fill="#12b76a" /><rect x="373.3" y="0" width="4.3" height="12" fill="#f79009" /><rect x="377.6" y="0" width="2.4" height="12" fill="#ef4444" /></g>
+      <g transform="translate(0 22)" clip-path="url(#language-bar)"><rect x="0.0" y="0" width="172.4" height="12" fill="#155eef" /><rect x="172.4" y="0" width="165.1" height="12" fill="#7f56d9" /><rect x="337.4" y="0" width="23.6" height="12" fill="#12b76a" /><rect x="361.0" y="0" width="13.8" height="12" fill="#f79009" /><rect x="374.9" y="0" width="5.1" height="12" fill="#ef4444" /></g>
       <g transform="translate(0 22)"><g transform="translate(0 32)">
         <circle cx="5" cy="5" r="5" fill="#155eef" />
-        <text class="legend" x="17" y="10">TypeScript 73%</text>
+        <text class="legend" x="17" y="10">TypeScript 45%</text>
       </g><g transform="translate(132 32)">
         <circle cx="5" cy="5" r="5" fill="#7f56d9" />
-        <text class="legend" x="17" y="10">Python 17%</text>
+        <text class="legend" x="17" y="10">Python 43%</text>
       </g><g transform="translate(264 32)">
         <circle cx="5" cy="5" r="5" fill="#12b76a" />
-        <text class="legend" x="17" y="10">MDX 9%</text>
+        <text class="legend" x="17" y="10">JavaScript 6%</text>
       </g><g transform="translate(0 60)">
         <circle cx="5" cy="5" r="5" fill="#f79009" />
-        <text class="legend" x="17" y="10">PLpgSQL 1%</text>
+        <text class="legend" x="17" y="10">MDX 4%</text>
       </g><g transform="translate(132 60)">
         <circle cx="5" cy="5" r="5" fill="#ef4444" />
-        <text class="legend" x="17" y="10">CSS 1%</text>
+        <text class="legend" x="17" y="10">HTML 1%</text>
       </g></g>
     </g>
   <text class="updated" x="42" y="305">github.com/Trust-Code-System</text>
